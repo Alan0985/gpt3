@@ -1,10 +1,24 @@
+import { Brand, CTA, Navbar } from './components';
+import { Blog, Features, Footer, Header, Possibility, WhatGPT3 } from './containers';
+
 import './App.css';
 
 function App()
 {
   return (
     <div className="App">
-      <h1>hello</h1>
+      <div className="gradient__bg">
+        <Navbar />
+        <Header />
+      </div>
+
+      <Brand />
+      <WhatGPT3 />
+      <Features />
+      <Possibility />
+      <CTA />
+      <Blog />
+      <Footer />
     </div>
   );
 }
